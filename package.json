@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "daisyui": "^2.39.0",
     "eslint": "8.27.0",
     "eslint-config-next": "13.0.2",
     "next": "13.0.2",
