@@ -1,0 +1,134 @@
+.fluid-piccolo {
+  font-size: clamp(13px, calc(0.875rem + ((1vw - 4px) * 1)), 16px) !important;
+  min-height: 0vw;
+}
+
+.fluid-grande {
+  font-size: clamp(20px, calc(0.875rem + ((1vw - 4px) * 1)), 35px) !important;
+  min-height: 0vw;
+}
+
+html {
+  font-family: "Avenir LT Std";
+  font-size: clamp(16px, calc(0.875rem + ((1vw - 4px) * 1)), 20px);
+  min-height: 0vw;
+}
+
+.menu-button:hover {
+  background-color: var(--bs-border-color-translucent);
+  padding: 0 0 0 1;
+}
+
+@media (min-width: 768px) {
+  #menu-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  #menu-mobile {
+    width: 65% !important;
+  }
+}
+
+/* HEADER */
+
+.appuntamento {
+  border-color: var(--bs-blue) !important;
+  border-width: 1.5px;
+  border-radius: 7px;
+}
+
+.appuntamento:hover {
+  background-color: var(--bs-blue);
+  color: white;
+  transition: 0.3s;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: transform 0.4s, height 0.4s, background-color 0.4s;
+  z-index: 30;
+  background-color: #fff;
+}
+
+.scroll-up .header {
+  transform: translateY(-20%);
+}
+
+.scroll-down .header {
+  transform: translateY(-100%);
+}
+
+.hide-head .header-blu {
+  visibility: hidden;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  transition: visibility 0.4s, height 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+  .scroll-up .header {
+    transform: translateY(-25%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    transition: transform 1s;
+  }
+}
+
+/* SLIDER SETTING */
+
+#carosello-home {
+  z-index: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  padding: 0 15px 0 15px;
+  margin-bottom: 50px;
+  text-align: center;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+}
+
+.card-carousel {
+  height: 50%;
+}
+
+/* WHATSAPP FLOAT */
+
+.float {
+  z-index: 100;
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #25D366;
+  color: #FFF;
+  font-size: 1.6rem;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+}
+
+.my-float {
+  margin-top: 0.8rem;
+}
+
+.float:hover {
+  background-color: black;
+}
+
